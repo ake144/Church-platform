@@ -161,6 +161,31 @@ export default function ContactUs() {
                             </h2>
                          </div>
                       
+
+                      <div className="flex flex-col gap-6">
+                            <div className="flex flex-col gap-2">
+                                <h3 className="text-xl font-semibold">Our Email</h3>
+                                <p className="text-lg">
+                                ace@acieth.org
+                                </p>
+                             </div>
+                            <div className="flex flex-col gap-2">
+                                <h3 className="text-xl font-semibold">Our Phone</h3>
+                                <p className="text-lg">
+                                +251-114660086
+                                </p>
+                            </div>
+                            <div className="flex flex-col gap-2">
+                                <h3 className="text-xl font-semibold">Our Address</h3>
+                              <p className="text-md">
+                                Mauritius Street ,Gofa
+                                Near Gaky Engineering
+                              </p>
+                                <p className="text-lg">
+                                Addis Ababa, Ethiopia
+                                </p>
+                            </div>
+                      </div>
                          </CardContent>
                         </Card>
                   

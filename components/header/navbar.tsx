@@ -19,6 +19,8 @@ import { DialogClose } from "@radix-ui/react-dialog";
 import { Button } from "../ui/button";
 import { Dialog } from "../ui/dialog";
 
+import { Card, CardContent } from "@/components/ui/card"
+
 const components = [
     { title: "Blog", href: "/resources/blog", description: "Deepen your knowledge with our blog." },
     { title: "Courses", href: "/coming-soon", description: "Take free courses and grow in faith." },
@@ -118,43 +120,61 @@ export function NavBar() {
                         </Link>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger className="hover:text-gray-500">
-                            Ministry
-                        </NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                            <ul className="grid gap-3 p-4">
-                                <li className="row-span-3">
-                                    <NavigationMenuLink asChild>
-                                        <a href="/english-ministry" className="hover:text-gray-500">
-                                            English Ministry
-                                        </a>
-                                    </NavigationMenuLink>
-                                </li>
-                                <li>
-                                    <NavigationMenuLink asChild>
-                                        <a href="/amharic-ministry" className="hover:text-gray-500">
-                                            Amharic Ministry
-                                        </a>
-                                    </NavigationMenuLink>
-                                </li>
-                            </ul>
-                        </NavigationMenuContent>
+                        <Link href="/news" passHref>
+                            <NavigationMenuLink className="cursor-pointer text-white text-xl font-serif font-semibold hover:text-gray-500">
+                                 News
+                            </NavigationMenuLink>
+                        </Link>
+                        
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                         <NavigationMenuTrigger className="hover:text-gray-500">
                             Resources
                         </NavigationMenuTrigger>
                         <NavigationMenuContent>
-                            <ul className="grid gap-3 p-4">
-                                {components.map((component) => (
-                                    <li key={component.title}>
-                                        <Link href={component.href} passHref>
-                                            <NavigationMenuLink className="cursor-pointer hover:text-gray-500">
-                                                {component.description}
-                                            </NavigationMenuLink>
-                                        </Link>
-                                    </li>
-                                ))}
+                            <ul className="grid  p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                                <li className="row-span-3">
+                                    <NavigationMenuLink asChild>
+                                        <a
+                                            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                                            href="/"
+                                        >
+                                            <Image src="https://images.unsplash.com/photo-1447619297994-b829cc1ab44a" width={50} height={50} alt="logo" />
+                                            <div className="mb-2 mt-4 text-lg font-medium">
+                                                Grace (ፀጋ) Bible Fellowship Church
+                                            </div>
+                                            <p className="text-sm leading-tight text-muted-foreground">
+                                                Grow In Grace. Grow In Knowledge.
+                                            </p>
+                                        </a>
+                                    </NavigationMenuLink>
+                                </li>
+                                <li>
+                                <Link href="/books" title="English Church">
+                                   Books
+                                </Link>
+                                </li>
+                               <li>
+                               <Link href="/magazines" title="Amharic Church">
+                                    Magazines
+                                </Link>
+                               </li>
+                               <li>
+                               <Link href="/song" title="Amharic Church">
+                                    ACE-Songs
+                                </Link>
+                               </li>
+                               <li>
+                               <Link href="/conference-videos" title="Amharic Church">
+                                    Conference Videos
+                                </Link>
+                               </li>
+                               <li>
+                               <Link href="/amharic-ministry" title="Amharic Church">
+                                    Teaching and Sermons 
+                                </Link>
+                               </li>
+                               
                             </ul>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
@@ -164,6 +184,14 @@ export function NavBar() {
                                 Contact Us
                             </NavigationMenuLink>
                         </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <Link href="/articles" passHref>
+                            <NavigationMenuLink className="cursor-pointer text-white text-xl font-serif font-semibold hover:text-gray-500">
+                                 Articles
+                            </NavigationMenuLink>
+                        </Link>
+                        
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                         <Link href="/about" passHref>
