@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import {
+  ClerkProvider,
+} from '@clerk/nextjs'
+import { NavBar } from "@/components/header/navbar";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +20,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={`${inter.className} flex flex-col min-h-screen`}>
+          {/* Fixed Navbar */}
+          <header className="fixed top-0 w-full z-50">
+            <NavBar />
+          </header>
+
+          {/* Main content */}
+          <main className="flex-grow pt-[var(--navbar-height)] pb-[var(--footer-height)]">
+            {children}
+          </main>
+
+          {/* Fixed Footer */}
+          <footer className=" w-full z-50">
+            <Footer />
+          </footer>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
