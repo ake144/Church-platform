@@ -49,7 +49,7 @@ export default function Home() {
           {[...Array(3)].map((_, i) => (
             <article
               key={i}
-              className="relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="relative overflow-hidden rounded-lg shadow-md hover:shadow-lg w-[400px] h-[350px] transition-shadow"
             >
               <img
                 alt=""
