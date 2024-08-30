@@ -11,6 +11,7 @@ import { MdPayment } from "react-icons/md";
 const Footer = () => {
     return (
         <footer className="bg-black ">
+            <div  className="grid grid-cols-1 md:grid-cols-3">
             <div className="flex justify-center items-center bg-gray-900 text-white">
                 <div className="p-4 sm:p-6">
                     <h3 className="mt-0.5 text-lg text-white">Ready to baptisim?</h3>
@@ -33,6 +34,7 @@ const Footer = () => {
                     <p className="text-sm text-gray-300">We have many opportunities for you to get involved.</p>
                 </div>
             </div>
+        </div>
 
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
          

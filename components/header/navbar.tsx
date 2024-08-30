@@ -95,9 +95,9 @@ export function NavBar() {
             <div className="flex items-center">
                 <Link href="/">
                     <Image
-                        src="https://images.unsplash.com/photo-1447619297994-b829cc1ab44a"
-                        width={50}
-                        height={50}
+                        src="/apo.jpg"
+                        width={70}
+                        height={60}
                         alt="logo"
                         className="cursor-pointer"
                     />
@@ -170,7 +170,7 @@ export function NavBar() {
                                 </Link>
                                </li>
                                <li>
-                               <Link href="/amharic-ministry" title="Amharic Church">
+                               <Link href="/teaching" title="Amharic Church">
                                     Teaching and Sermons 
                                 </Link>
                                </li>

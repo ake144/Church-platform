@@ -50,8 +50,8 @@ const AboutUs = () => {
 
     return (
         <section className='container px-6  py-10 mx-auto'>
-             <h2 className="mt-[3rem]  text-6xl my-3 font-bold">About Us</h2>
-            <div>
+
+            <div className="my-5">
             The ACE&apos;s fundamental doctrine is rooted and anchored firmly with the first New Testament Church that was born on the day of Pentecost. 
             It preaches and practices the same message of only one God manifested Himself in flesh and His name is Jesus; repentance, baptism in Jesus name for the remission of sins, the infilling of the Holy Ghost (Acts 2:37-38) and Christians live a holy life.
              Its Constituency is in millions and growing by about 45 thousand every year. While most of the members are in Ethiopia, the number of saints is growing in Africa, North America, Asia and other parts of the world as well. Its HQ is in Addis Ababa, Ethiopia.
@@ -61,7 +61,7 @@ const AboutUs = () => {
                     Our Vision
                 </h1>
                 <p className="leading-7 [&:not(:first-child)]:mt-6">
-                    At Grace (ፀጋ) Bible Fellowship Church, we believe that the process of becoming a disciple of Jesus is a lifelong journey of growth and transformation.
+                    At Apostolic Church, we believe that the process of becoming a disciple of Jesus is a lifelong journey of growth and transformation.
 
                     Our vision is to create a dynamic fellowship of believers who seek to connect with God, grow in their relationship with Jesus Christ, and serve others with love and compassion. We aim to be a supportive community where people can explore their faith, deepen their understanding of the Bible, and learn how to apply its teachings to their everyday lives. Our goal is to help our members become fully devoted followers of Jesus and to empower them to lead and impact in every sphere of life.
                 </p>

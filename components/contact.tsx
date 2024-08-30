@@ -92,7 +92,7 @@ export default function ContactUs() {
         console.log(data)
     }
     return (
-        <div className="flex  bg-gray-500 items-center justify-center p-2">
+        <div className="flex   items-center justify-center p-2">
             <div className="grid grid-cols-1 md:grid-cols-2 ">
 
                 <div>
