@@ -1,16 +1,12 @@
+import LetterPullup from "./magicui/letter-pullup";
 import { Separator } from "./ui/separator";
 import { FcAlarmClock } from "react-icons/fc";
 
 const ServiceTime = () => {
   return (
     <div className="flex flex-col items-center">
-      <p className="text-red-500 font-bold text-3xl text-center">
-        There's a Place for You at Apostolic Church!
-      </p>
-      <p className="text-red-500 font-bold text-3xl text-center mt-4">
-        All Are Welcome!
-      </p>
-      <Separator className="bg-red-500 mt-8 w-full" />
+      <LetterPullup className="text-3xl font-bold" words={" There's a Place for You at Apostolic Church! All Are Welcome! "} delay={0.05} />;
+      <Separator className="bg-red-500 mt-8  w-1/2 items-center flex justify-center " />
       
       <h2 className="text-4xl font-bold my-9 text-center">
         Apostolic Church Service Times

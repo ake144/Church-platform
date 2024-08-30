@@ -3,6 +3,7 @@
 import PrayerRequest from "@/components/prayer";
 import ServiceTime from "@/components/service";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const imageUrl = "https://images.unsplash.com/photo-1507692049790-de58290a4334";
@@ -33,11 +34,14 @@ export default function Home() {
       </div>
 
       {/* Mission and Connection Section */}
-      <div className="relative py-20 bg-gray-800 text-white">
+      <div className="relative py-20 bg-black text-white">
         <div className="text-center">
           <p className="font-bold text-lg">OUR MISSION</p>
           <h2 className="text-3xl my-6">Pursue And Equip Families To Passionately Follow Christ.</h2>
-          <p className="text-5xl my-12">Get Connected!</p>
+          
+          <Link href="/contact-us">
+                <p className="text-5xl my-12">Get Connected!</p>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mx-6 md:mx-20">
@@ -62,9 +66,7 @@ export default function Home() {
                 </h3>
                 <p className="text-sm line-clamp-3">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                  pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                  quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                  atque dignissimos. Molestias explicabo corporis voluptatem?
+                  pariatur 
                 </p>
               </div>
             </article>
@@ -73,7 +75,7 @@ export default function Home() {
       </div>
 
       {/* Prayer Request Section */}
-      <div className="relative py-20 bg-gray-800">
+      <div className="relative py-20 ">
         <PrayerRequest />
       </div>
     </div>
