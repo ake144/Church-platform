@@ -139,9 +139,9 @@ export function NavBar() {
                                             className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                                             href="/"
                                         >
-                                            <Image src="https://images.unsplash.com/photo-1447619297994-b829cc1ab44a" width={50} height={50} alt="logo" />
+                                            <Image src="/apo.jpg" width={50} height={50} alt="logo" />
                                             <div className="mb-2 mt-4 text-lg font-medium">
-                                                Grace (ፀጋ) Bible Fellowship Church
+                                               Apostolic Church International Fellowship
                                             </div>
                                             <p className="text-sm leading-tight text-muted-foreground">
                                                 Grow In Grace. Grow In Knowledge.
