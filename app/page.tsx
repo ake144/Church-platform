@@ -1,5 +1,6 @@
 
 
+import TypingAnimation from "@/components/magicui/typing-animation";
 import PrayerRequest from "@/components/prayer";
 import ServiceTime from "@/components/service";
 import Image from "next/image";
@@ -22,9 +23,12 @@ export default function Home() {
 
         {/* Overlay Content */}
         <div className="relative z-10 w-full h-full flex flex-col justify-center items-center bg-black/50">
-          <h1 className="text-5xl md:text-7xl font-bold text-white text-center">
-            Come Seek God Together at Apostolic Church
-          </h1>
+                  
+          <TypingAnimation
+                className="text-5xl md:text-7xl font-bold  text-white"
+                text="Come Seek God Together at Apostolic Church"
+              />
+             
         </div>
       </div>
 
@@ -51,11 +55,33 @@ export default function Home() {
               key={i}
               className="relative overflow-hidden rounded-lg shadow-md hover:shadow-lg w-[400px] h-[350px] transition-shadow"
             >
-              <img
-                alt=""
-                src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
+              {
+             i ===0
+             ?
+                    <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1620677285810-949a8a5c8cdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80"
+                    className="absolute inset-0 h-full w-full object-cover"
+                    />
+                :
+                i ===1
+                ?
+                    <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1678891936578-dede40bf7e60?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80"
+                    className="absolute inset-0 h-full w-full object-cover"
+                    />
+
+                :
+                  <img
+                  alt=""
+                  src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80"
+                  className="absolute inset-0 h-full w-full object-cover"
+                  />
+                  //
+
+              } 
+             
               <div className="relative bg-gradient-to-t from-gray-900/70 to-gray-900/30 text-white p-6">
                 <h3 className="text-lg font-bold mb-2">
                   {i === 0

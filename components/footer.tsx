@@ -2,6 +2,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import { MdPayment } from "react-icons/md";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -45,7 +46,9 @@ const Footer = () => {
 
         <div className="flex flex-col items-center">
           <MdPayment className="text-4xl mb-2" />
-          <h3 className="text-xl font-semibold">Giving</h3>
+          <Link href='/give'>
+              <h3 className="text-xl font-semibold">Giving</h3>
+          </Link>
           <p>Give online</p>
         </div>
       </div>

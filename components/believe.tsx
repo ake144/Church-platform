@@ -34,7 +34,7 @@ const WeBelieve = () => {
           <div className="text-center">
             <h2 className="text-3xl font-semibold mb-6">Believing in the Only God of Salvation</h2>
             <p className="text-lg">
-              We believe that salvation requires faith in the one true God. By repenting from sin, being baptized in Jesus' name, and receiving the Holy Spirit, we are granted eternal life and a personal relationship with our Creator.
+              We believe that salvation requires faith in the one true God. By repenting from sin, being baptized in Jesus&apos; name, and receiving the Holy Spirit, we are granted eternal life and a personal relationship with our Creator.
             </p>
           </div>
 

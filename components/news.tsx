@@ -25,6 +25,7 @@ const News = () => {
        <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mx-12 gap-8 ">
          {data.map((i, index)=>(
            <article
+           key={index}
                className="rounded-lg border border-gray-100 gap-9 bg-white p-4 shadow-sm transition hover:shadow-lg sm:p-6"
                >
                <span className="inline-block rounded bg-blue-600 p-2 text-white">
