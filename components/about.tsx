@@ -85,3 +85,10 @@ const AboutUs = () => {
 }
 
 export default AboutUs;
+
+
+
+
+
+// degefach batebo 28428451
+
